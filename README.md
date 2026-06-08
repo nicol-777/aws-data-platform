@@ -28,14 +28,14 @@ GitHub Actions → auto-deploys Lambda on every push
 
 ## Features
 
-- **Event-driven validation** — Lambda automatically triggers when files land in `raw/`, enforcing business rules before data is promoted
-- **Trusted data zones** — S3 is structured into `raw/`, `trusted/`, and `quarantine/` layers, mirroring enterprise data lake design
-- **Secured REST API** — API Gateway exposes trusted data via a `GET /data` endpoint, protected by API Key authentication and rate limiting
-- **Audit logging** — Every validation event is written to DynamoDB with file name, timestamp, result, issues, and destination
-- **Alerting** — SNS publishes email alerts when data fails validation and is quarantined
-- **Monitoring** — CloudWatch logs all API requests with a dashboard tracking request count, error rates, and latency
-- **Infrastructure as Code** — Core AWS resources are defined in Terraform for reproducibility
-- **CI/CD** — GitHub Actions automatically deploys Lambda functions to AWS on every push to `main`
+- **Event-driven validation** - Lambda automatically triggers when files land in `raw/`, enforcing business rules before data is promoted
+- **Trusted data zones** - S3 is structured into `raw/`, `trusted/`, and `quarantine/` layers, mirroring enterprise data lake design
+- **Secured REST API** - API Gateway exposes trusted data via a `GET /data` endpoint, protected by API Key authentication and rate limiting
+- **Audit logging** - Every validation event is written to DynamoDB with file name, timestamp, result, issues, and destination
+- **Alerting** - SNS publishes email alerts when data fails validation and is quarantined
+- **Monitoring** - CloudWatch logs all API requests with a dashboard tracking request count, error rates, and latency
+- **Infrastructure as Code** - Core AWS resources are defined in Terraform for reproducibility
+- **CI/CD** - GitHub Actions automatically deploys Lambda functions to AWS on every push to `main`
 
 ---
 
