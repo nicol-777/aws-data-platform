@@ -159,8 +159,8 @@ Resources managed:
 
 ## Key Engineering Decisions
 
-- **Serverless architecture** — Zero infrastructure management, automatic scaling, pay-per-use
-- **Separation of concerns** — Validation logic is decoupled from API serving logic across two independent Lambda functions
-- **Trust-based routing** — Data is never served from `raw/` — consumers only access data that has passed validation
-- **Immutable audit trail** — DynamoDB logs are append-only, providing full lineage of every file processed
-- **Secure by default** — API endpoint returns `403 Forbidden` without a valid API key
+- **Serverless architecture** - Zero infrastructure management, automatic scaling, pay-per-use
+- **Separation of concerns** - Validation logic is decoupled from API serving logic across two independent Lambda functions
+- **Trust-based routing** - Data is never served from `raw/` — consumers only access data that has passed validation
+- **Immutable audit trail** - DynamoDB logs are append-only, providing full lineage of every file processed
+- **Secure by default** - API endpoint returns `403 Forbidden` without a valid API key
